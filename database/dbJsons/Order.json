@@ -1,0 +1,44 @@
+{
+    "1": {
+        "date": "2024-06-30",
+        "cost": 50,
+        "domain": "unimib.it",
+        "client": "1",
+        "ordertype": "register"
+    },
+    "2": {
+        "date": "2024-06-30",
+        "cost": 70,
+        "domain": "isistemidistribuiti.com",
+        "client": "1",
+        "ordertype": "register"
+    },
+    "3": {
+        "date": "2024-06-30",
+        "cost": 10,
+        "domain": "unimib.it",
+        "client": "1",
+        "ordertype": "renewal"
+    },
+    "4": {
+        "date": "2014-06-30",
+        "cost": 40,
+        "domain": "ilovebeingajedi.net",
+        "client": "2",
+        "ordertype": "register"
+    },
+    "5": {
+        "date": "2023-06-30",
+        "cost": 90,
+        "domain": "iamthesenate.com",
+        "client": "3",
+        "ordertype": "register"
+    },
+    "6": {
+        "date": "2024-06-30",
+        "cost": 90,
+        "domain": "iamthesenate.com",
+        "client": "3",
+        "ordertype": "register"
+    }
+}

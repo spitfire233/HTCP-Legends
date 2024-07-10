@@ -1,0 +1,20 @@
+{
+    "1": {
+        "surname": "petriglia",
+        "name": "emanuele",
+        "id": "1",
+        "email": "e.petriglia@unimib.it"
+    },
+    "2": {
+        "surname": "tano",
+        "name": "ahsoka",
+        "id": "2",
+        "email": "ahsokatano@nolongerajedi.com"
+    },
+    "3": {
+        "surname": "palpatine",
+        "name": "sheev",
+        "id": "3",
+        "email": "sheevpalpatine@empire.com"
+    }
+}
