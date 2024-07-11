@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registrazione dominio</title>
+    <link rel="stylesheet" href="../CSS/RegisterDomainCSS.css">
+</head>
+
+<body>
+    <form id="registerDomainForm">
+        <h3>Registra nuovo dominio</h3>
+        <label for="newDomain">Nuovo dominio:</label>
+        <input type="text" id="newDomain" placeholder="Inserisci il dominio" required /><br>
+
+        <label for="durationRegistration">Durata della registrazione (1-10 anni):</label>
+        <input id="durationRegistration" type="number" min="1" max="10" value="durationRegistration"
+            placeholder="Durata della registrazione" onchange="changeCost(this.value)" required /><br>
+
+        <p id="cost">Costo: 0€</p>
+
+        <h3>Dati dell'acquisto</h3>
+        <label for="Name">Nome:</label>
+        <input type="text" id="registerName" placeholder="Nome" /><br>
+
+        <label for="Surame">Cognome:</label>
+        <input type="text" id="registerSurname" placeholder="Cognome" /><br>
+
+        <label for="Mail">Email:</label>
+        <input type="email" id="registerEmail" placeholder="Email" /><br>
+
+        <label for="ccNumber">Numero di carta di credito:</label>
+        <input type="number" id="ccNumber" placeholder="Numero di carta di credito" required /><br>
+
+        <label for="ccExpiry">Data di scadenza della carta di credito:</label>
+        <input type="month" id="ccExpiry" required /><br>
+
+        <label for="ccCVV">CVV:</label>
+        <input type="number" id="ccCVV" placeholder="CVV" required /><br>
+
+        <label for="ccName">Nome dell'intestatario della carta:</label>
+        <input type="text" id="ccName" placeholder="Nome dell'intestatario della carta" required /><br>
+
+        <label for="ccSurname">Cognome dell'intestatario della carta:</label>
+        <input type="text" id="ccSurname" placeholder="Cognome dell'intestatario della carta" required /><br>
+
+        <button type="submit">Registra nuovo dominio</button>
+    </form>
+
+    <script src="../JavaScript/RegisterDomainScript.js"></script>
+</body>
+
+</html>

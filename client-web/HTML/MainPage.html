@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sistema di gestione dei domini</title>
+  <link rel="stylesheet" href="../CSS/MainPageCSS.css">
+</head>
+
+<body data-server-no-reload>
+
+  <!-- sezione per controllare la che esista o meno un domain
+     implementata
+     da testare-->
+
+  <form id="checkDomainForm">
+    <h3>Verifica la disponibilità del dominio</h3>
+    <label for="Domain">Dominio:</label>
+    <input type="text" id="domain" placeholder="Inserisci il dominio" />
+    <input type="submit" value="Verifica disponibilità">
+    <p id="checkDomainResult"></p>
+  </form>
+
+  <!-- sezione per registrare un domain
+     non implementata-->
+
+  <!-- visualizzare in elenco la lista dei domini già registrati con relativa
+     data d'inizio e data di scadenza
+     da implementare-->
+
+
+  <table id="domainsTable">
+    <caption>Domini</caption>
+    <tr>
+      <th>Dominio</th>
+      <th>Data di registrazione</th>
+      <th>Data di scadenza</th>
+      <th>Azioni</th> <!-- Colonna aggiunta per le azioni -->
+    </tr>
+    <!-- Le righe della tabella verranno aggiunte dinamicamente -->
+  </table>
+
+
+  <!-- visualizzare in elenco la lista degli ordini fatti 
+         dati:
+         dominio
+         data
+         oggetto -> registrazione, rinnovo
+         quota
+     da implementare-->
+
+
+  <table id="ordersTable">
+    <caption>Ordini</caption>
+    <tr>
+      <th>Dominio</th>
+      <th>Data dell'ordine</th>
+      <th>Oggetto dell'ordine</th>
+      <th>Quota</th>
+    </tr>
+  </table>
+
+
+
+
+
+  <!-- collegamento al file esterno javascript per eseguire lo script
+    in HTML-->
+  <script src="../JavaScript/MainScript.js"></script>
+
+</body>
+
+</html>

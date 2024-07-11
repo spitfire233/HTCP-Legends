@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sistema di gestione dei domini</title>
+  <link rel="stylesheet" href="../CSS/RegistrerOrLoginCSS.css">
+</head>
+
+<body data-server-no-reload>
+
+
+  <!-- da modificare per creare un interfaccia di registrazione e login interattiva
+     metodo di registrazione utente
+     implementata
+     da testare -->
+
+  <div class="container">
+    <div class="auth-toggle">
+      <input type="radio" id="register" name="auth" class="auth-radio" checked>
+      <label for="register" class="auth-label">Registrazione</label>
+
+      <input type="radio" id="login" name="auth" class="auth-radio">
+      <label for="login" class="auth-label">Login</label>
+    </div>
+
+    <div id="registerSection" style="display:block;">
+      <h2>Registrazione utente</h2>
+      <form id="registerUserForm">
+        <label for="registerName">Nome:</label><br>
+        <input type="text" id="registerName" name="name" placeholder="Nome"><br>
+        <label for="registerSurname">Cognome:</label><br>
+        <input type="text" id="registerSurname" name="surname" placeholder="Cognome"><br>
+        <label for="registerMail">Mail:</label><br>
+        <input type="email" id="registerMail" name="mail" placeholder="Mail"><br>
+        <input type="submit" value="Registrazione">
+        <p id="registerResult"></p>
+      </form>
+    </div>
+
+    <div id="loginSection" style="display:none;">
+      <h2>Login utente</h2>
+      <form id="loginUserForm" onsubmit="event.preventDefault(); login()">
+        <label for="loginMail">Mail:</label><br>
+        <input type="email" id="loginMail" name="mail" placeholder="Mail"><br>
+        <input type="submit" value="Login">
+        <p id="loginResult"></p>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- collegamento al file esterno javascript per eseguire lo script
+  in HTML-->
+  <script src="../JavaScript/RegisterOrLoginScript.js"></script>
+
+</body>
+
+</html>

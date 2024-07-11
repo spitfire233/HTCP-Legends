@@ -1,0 +1,102 @@
+body {
+    background-color: #d8d8d8;
+    font-family: Verdana;
+    margin: 0; /* Rimuove il margine di default */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; /* o qualsiasi larghezza preferisci */
+}
+
+form {
+    padding: 20px;
+    border: 2px solid #b1b1b1;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    width: calc(100% + 30%); /* Aumenta la larghezza del 30% per includere un incremento del 15% da ciascun lato */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Distanza dal form al contenitore dei toggle */
+    margin-left: -15%; /* Sposta il form a sinistra per centrarlo rispetto alla sua nuova larghezza */
+    margin-right: -15%; /* Sposta il form a destra per centrarlo rispetto alla sua nuova larghezza */
+}
+
+/* Stile Base per la Sezione di Toggle, ora applicato al nuovo contenitore */
+.auth-toggle-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #b1b1b1;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+    width: 100%;
+}
+
+/* Nasconde i radio button ma li rende ancora funzionanti */
+.auth-radio {
+    display: none;
+}
+
+/* Stile per le etichette che fungeranno da toggle button */
+.auth-label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px; /* Spazio tra i button */
+    background-color: #f2f2f2;
+    border: 2px solid #b1b1b1;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Verdana;
+    color: #000000;
+}
+
+/* Cambia lo sfondo quando il toggle è attivo/checked */
+.auth-radio:checked + .auth-label {
+    background-color: #b1b1b1;
+    color: white;
+}
+
+/* Opzionale: Cambia lo sfondo al passaggio del mouse per migliorare l'interattività */
+.auth-label:hover {
+    background-color: #e2e2e2;
+}
+
+/* Stili per label e input rimangono invariati */
+
+label {
+    color: #000000;
+    font-weight: bold;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}

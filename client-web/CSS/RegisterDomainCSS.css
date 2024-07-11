@@ -1,0 +1,95 @@
+body {
+    background-color: #d8d8d8;
+    font-family: Verdana;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="number"] {
+    width: 60vw; /* Modificato da % a VW */
+    padding: 0.5rem; /* Modificato da px a REM */
+    margin: 0.625rem 0; /* Modificato da px a REM */
+    display: inline-block;
+    border: 0.0625rem solid #ccc; /* Modificato da px a REM */
+    border-radius: 0.25rem; /* Modificato da px a REM */
+    box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+p#cost {
+    font-family: Verdana;
+    color: #333;
+    margin-top: 0.625rem; /* Modificato da px a REM */
+}
+
+h3 {
+    font-family: Verdana;
+    color: #ff0000;
+}
+
+form {
+    padding: 1.25rem; /* Modificato da px a REM */
+    border: 0.125rem solid #b1b1b1; /* Modificato da px a REM */
+    background-color: #f2f2f2;
+    width: 40vw; /* Modificato da % a VW */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.25rem; /* Modificato da px a REM */
+    border-radius: 1.875rem; /* Modificato da px a REM */
+}
+
+label {
+    color: #000000;
+    font-weight: bold;
+    margin-top: 0.625rem; /* Modificato da px a REM */
+}
+
+input[type=text], input[type=email], input[type=number], input[type=month] {
+    width: 100%; /* Mantiene % per adattabilità */
+    padding: 0.75rem 1.25rem; /* Modificato da px a REM */
+    margin: 0.5rem 0; /* Modificato da px a REM */
+    display: inline-block;
+    border: 0.0625rem solid #ccc; /* Modificato da px a REM */
+    box-sizing: border-box;
+    border-radius: 0.625rem; /* Modificato da px a REM */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.875rem 1.25rem; /* Modificato da px a REM */
+    margin: 1.25rem 0; /* Modificato da px a REM */
+    border: none;
+    border-radius: 0.625rem; /* Modificato da px a REM */
+    cursor: pointer;
+    width: 100%; /* Mantiene % per adattabilità */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    color: #000000;
+}
+
+#cost {
+    color: #000000;
+    font-weight: bold;
+}
